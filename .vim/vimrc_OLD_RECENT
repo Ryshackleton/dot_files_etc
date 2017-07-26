@@ -1,0 +1,27 @@
+
+" always have syntax on
+syntax on
+
+" File ~/.vimrc
+" Global settings for all files
+set tabstop=2
+set shiftwidth=2
+set noexpandtab
+
+" File ~/.vim/ftplugin/python.vim
+set ignorecase
+setlocal tabstop=4
+setlocal shiftwidth=4
+setlocal expandtab
+
+
+"commenting blocks of code.
+"insert and remove comments in visual and normal mode
+vmap ,ic :s/^/\/\//g<CR>:let @/ = ""<CR>
+map  ,ic :s/^/\/\//g<CR>:let @/ = ""<CR>
+vmap ,rc :s/^\/\///g<CR>:let @/ = ""<CR>
+map  ,rc :s/^\/\///g<CR>:let @/ = ""<CR>
+
+map dw diw
+map vw viw
+map yw yiw
